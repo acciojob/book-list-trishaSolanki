@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBookList</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="container">
+        <h1 class="text-center my-4">MyBookList</h1>
+        <div class="form-group">
+            <input type="text" id="title" class="form-control mb-2" placeholder="Title">
+            <input type="text" id="author" class="form-control mb-2" placeholder="Author">
+            <input type="text" id="isbn" class="form-control mb-2" placeholder="ISBN#">
+            <button id="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN#</th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+                <!-- Book rows will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
 </body>
-
 </html>
